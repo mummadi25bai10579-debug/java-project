@@ -257,72 +257,19 @@ smart-library-management-system/
 
 ---
 
-## 9. Compilation & Execution Instructions
+## 9. Installation & Execution
 
-### Option A: Using Helper Scripts
+### Prerequisites
 
-#### On Windows (PowerShell or Command Prompt):
+- Java Development Kit (JDK) 17 or higher
+- Windows Command Prompt or PowerShell
+- No external database server is required
+
+Check Java installation:
+
 ```powershell
-# 1. Compile all Java sources
-.\compile.bat
-
-# 2. Run the automated test suite
-.\test.bat
-
-# 3. Launch the interactive application
-.\run.bat
-```
-
-*(Or simply double-click `run.bat` from Windows File Explorer)*
-
-#### On Linux / macOS:
-```bash
-# Grant execution permissions (first time only)
-chmod +x compile.sh test.sh run.sh
-
-# 1. Compile all Java sources
-./compile.sh
-
-# 2. Run the automated test suite
-./test.sh
-
-# 3. Launch the interactive application
-./run.sh
-```
-
----
-
-### Option B: Using Direct Terminal Commands
-
-#### On Windows:
-```cmd
-mkdir bin
-dir /s /b src\*.java > sources.txt
-javac -encoding UTF-8 -cp "lib/sqlite-jdbc.jar" -d bin @sources.txt
-del sources.txt
-
-# Run automated tests
-java -cp "bin;lib/sqlite-jdbc.jar" com.library.TestRunner
-
-# Run application
-java -cp "bin;lib/sqlite-jdbc.jar" com.library.Main
-```
-
-#### On Linux / macOS:
-```bash
-mkdir -p bin
-find src -name "*.java" > sources.txt
-javac -encoding UTF-8 -cp "lib/sqlite-jdbc.jar" -d bin @sources.txt
-rm -f sources.txt
-
-# Run automated tests
-java -cp "bin:lib/sqlite-jdbc.jar" com.library.TestRunner
-
-# Run application
-java -cp "bin:lib/sqlite-jdbc.jar" com.library.Main
-```
-
----
+java -version
+javac -version
 
 ## 10. Sample Usage Walkthrough
 
