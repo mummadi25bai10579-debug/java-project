@@ -1,0 +1,23 @@
+# Compiled class files
+bin/
+*.class
+
+# Persistent DB files (created at runtime)
+data/*.db
+*.db
+*.db-journal
+
+# IDE & Editor files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary sources list
+sources.txt
