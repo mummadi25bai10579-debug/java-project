@@ -263,9 +263,12 @@ smart-library-management-system/
 
 - Java Development Kit (JDK) 17 or higher
 - Windows Command Prompt or PowerShell
+- SQLite JDBC driver included in the `lib/` folder
 - No external database server is required
 
-Check Java installation:
+### Verify Java Installation
+
+Open Command Prompt or PowerShell in the project directory and run:
 
 ```powershell
 java -version
